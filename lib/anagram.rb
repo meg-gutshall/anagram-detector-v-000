@@ -16,4 +16,9 @@ class Anagram
     w_array.delete_if {|w| w.split("").sort != word.split("").sort}
   end
 
+  # Another possible solution
+  # def match(array)
+  #   array.select {|x| x.split("").sort == @name.split("").sort}
+  # end
+
 end
